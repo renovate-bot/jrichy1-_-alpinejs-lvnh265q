@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "stories/index.stories.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "story1"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "stories/index.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "story1",
+          "declaration": {
+            "name": "story1",
+            "module": "stories/index.stories.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/index.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MyCounter",
+          "members": [
+            {
+              "kind": "method",
+              "name": "data"
+            }
+          ],
+          "superclass": {
+            "name": "HTMLElement"
+          },
+          "tagName": "my-counter",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MyCounter",
+          "declaration": {
+            "name": "MyCounter",
+            "module": "src/index.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "my-counter",
+          "declaration": {
+            "name": "MyCounter",
+            "module": "src/index.js"
+          }
+        }
+      ]
+    }
+  ]
+}
